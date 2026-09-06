@@ -1,131 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>JNEC Events Hub — Home</title>
-</head>
-<body>
-<header id="top">
-<h1>JNEC Events Hub</h1>
-<nav>
-<a href="index.html" title="Go to home page">Home</a>
-<a href="events.html">Events</a>
-<a href="register.html">Register</a>
-<a href="gallery.html">Gallery</a>
-<a href="contact.html">Contact</a>
-</nav>
-</header>
-<main>
-<!DOCTYPE html>
-<html lang="en">
-<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>JNEC Events Hub — Contact</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- Custom CSS (Must be last) -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-<header>
-    <h1>Events Hub</h1>
-
+<header id="top">
+    <h1>JNEC Events Hub</h1>
     <nav>
-        <a href="index.html">Home</a> |
-        <a href="events.html">Events</a> |
-        <a href="gallery.html">Gallery</a> |
-        <a href="register.html">Register</a> |
+        <a href="index.html">Home</a>
+        <a href="events.html">Events</a>
+        <a href="register.html">Register</a>
+        <a href="gallery.html">Gallery</a>
         <a href="contact.html">Contact</a>
     </nav>
 </header>
 
-<main>
+<main class="container py-4">
+    <h2 class="mb-4">Contact Us</h2>
 
-    <h2>Contact Us</h2>
+    <div class="row g-4">
+        <section class="col-md-6">
+            <h3>College Address</h3>
+            <p>
+                Jigme Namgyel Engineering College<br>
+                Dewathang, Samdrup Jongkhar<br>
+                Bhutan
+            </p>
+            <p><strong>Email:</strong> <a href="mailto:info@eventshub.edu.bt">info@eventshub.edu.bt</a></p>
+            <p><strong>Phone:</strong> +975 12345678</p>
 
-    <section>
-        <h3>College Address</h3>
-        <p>
-            Events Hub College<br>
-            College Road<br>
-            Sarpang, Bhutan
-        </p>
+            <h3 class="mt-4">Our Location</h3>
+            <div class="ratio ratio-16x9">
+                <iframe
+                    src="https://www.google.com/maps?q=Sarpang%20Bhutan&output=embed"
+                    style="border:0;"
+                    allowfullscreen
+                    loading="lazy">
+                </iframe>
+            </div>
+        </section>
 
-        <p>
-            Email:
-            <a href="mailto:info@eventshub.edu.bt">
-                info@eventshub.edu.bt
-            </a>
-        </p>
+        <section class="col-md-6">
+            <h3>Enquiry Form</h3>
+            <form action="#" method="post" class="p-3 border rounded bg-light">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name:</label>
+                    <input type="text" id="name" name="name" class="form-field form-control" required>
+                </div>
 
-        <p>Phone: +975 12345678</p>
-    </section>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" id="email" name="email" class="form-field form-control" required>
+                </div>
 
-    <section>
-        <h3>Our Location</h3>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message:</label>
+                    <textarea id="message" name="message" rows="5" class="form-field form-control" required></textarea>
+                </div>
 
-        <iframe
-            src="https://www.google.com/maps?q=Sarpang%20Bhutan&output=embed"
-            width="600"
-            height="350"
-            style="border:0;"
-            allowfullscreen
-            loading="lazy">
-        </iframe>
-    </section>
-
-    <section>
-        <h3>Enquiry Form</h3>
-
-        <form action="#" method="post">
-
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" required>
-            <br><br>
-
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required>
-            <br><br>
-
-            <label for="message">Message:</label><br>
-            <textarea
-                id="message"
-                name="message"
-                rows="6"
-                cols="40"
-                required></textarea>
-            <br><br>
-
-            <input type="submit" value="Submit">
-
-        </form>
-    </section>
-
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </section>
+    </div>
 </main>
 
 <footer>
-    <p>&copy; 2026 Events Hub College</p>
+    <p>&copy; 2026 JNEC Events Hub</p>
 </footer>
 
-</body>
-</html>
-<section id="welcome" class="intro">
-<h2>Welcome</h2>
-<p>The <strong>Events Hub</strong> lists every upcoming event at
-<em>Jigme Namgyel Engineering College</em>.
-<span class="highlight" title="Registrations close 3 days before each event"> Register early!</span></p>
-<img src="media/campus.jpeg" alt="JNEC campus" width="400" title="Our campus in Dewathang">
-</section>
-
-<section id="location">
-<h2>Find Us</h2>
-<iframe src="https://www.openstreetmap.org/export/embed.html?bbox=91.44,26.85,91.48,26.88"
-width="400" height="250" title="Campus map"></iframe>
-</section>
-
-</main>
-<footer>
-<p>&copy; 2026 JNEC Events Hub</p>
-</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
 
